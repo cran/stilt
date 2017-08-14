@@ -51,6 +51,8 @@ GNU General Public License for more details. In addition, the authors
     settings for a simple 1-parameter ensemble example}
   \item{emul.1D}{Gaussian Process emulator that has been fit to the
     aforementioned model ensemble output}
+  \item{Data.AR1.Korea.model and Data.AR1.Korea.par}{Temperature variability and
+    future change for 29 CMIP5 global climate models}
   \item{Data.UVic.model and Data.UVic.par}{Model output and parameter
     settings for temperature anomaly output from 3-parameter ensemble of
     climate model UVic ESCM}
@@ -68,16 +70,17 @@ GNU General Public License for more details. In addition, the authors
 \tabular{ll}{
 Package: \tab stilt\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2013-12-23\cr
+Version: \tab 1.1.0\cr
+Date: \tab 2017-08-14\cr
 License: \tab GPL-3\cr
 LazyLoad: \tab no\cr
 }
 }
 \section{Limitations and Caveats}{
   \enumerate{
-    \item The emulator will not work well for 'jagged' model response
-    surfaces (high nugget)
+    \item The emulator (like any other available software packages)
+    will not work well for 'jagged' model response
+    surfaces (high nugget): predictive uncertainty will be too high. 
     \item The emulator is restricted to output at regular intervals in
     time and space
     \item The code has not been tested under conditions of extreme high
@@ -101,12 +104,12 @@ LazyLoad: \tab no\cr
 \author{
 Roman Olson, Won Chang, Klaus Keller and Murali Haran
 
-Maintainer: Roman Olson <stilt.package@gmail.com> 
+Maintainer: Kelsey Ruckert <datamgmt@scrim.psu.edu> 
 }
 \references{
 R. Olson and W. Chang (2013): Mathematical framework for a separable
-Gaussian Process Emulator. Tech. Rep., available from
-\href{http://www.geosc.psu.edu/~rtonkono}{www.geosc.psu.edu/~rtonkono}.
+Gaussian Process Emulator. Tech. Rep., available from \cr
+\href{http://www.scrimhub.org/resources/stilt/Olson_and_Chang_2013_Stilt_Emulator_Technical_Report.pdf}{www.scrimhub.org/resources/stilt/Olson_and_Chang_2013_Stilt_Emulator_Technical_Report.pdf}.
 
 C. E. Rasmussen and C. K. I. Williams (2006): Gaussian Processes for
 machine learning, the MIT press, available from \url{www.gaussianprocess.org/gpml/}
