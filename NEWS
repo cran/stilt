@@ -1,3 +1,20 @@
+# stilt v1.3.1 (Release date: 2025-04-09)
+==============
+
+Changes:
+
+* Update URLs from http to https and scrimhub.org to scrim.psu.edu in: 
+	- emul.predict.Rd
+	- emulator.Rd
+	- predict.emul.Rd
+	- rsurface.plot.Rd
+	- sep.cov.Rd
+	- stilt-package.Rd
+	- test.csv.Rd
+* Update depends of R 3.2.4 to 3.5.0 for fields package
+* Housekeeping changes: maintenance of maintainer email.
+
+
 # stilt v1.3.0 (Release date: 2018-08-15)
 ==============
 
